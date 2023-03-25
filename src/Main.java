@@ -5,14 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean result = condition("java_skypro.g", "D_1hWiKjjP_9", "D_1hWiKjjP_9");
+        boolean result = condition("java_skypro.go", "D_1hWiKjjP_9", "D_1hWiKjjP_9");
 
         if (result) {
             System.out.println("данные верны");
-
-        } else {
-            System.out.println("некоректные данные");
-
         }
     }
 
@@ -29,7 +25,6 @@ public class Main {
 
     public static void checkUser(String login, String password, String confirmPassword)
             throws WrongLoginException, WrongPasswordException {
-        String dataUser = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 
         if (Objects.isNull(login) || login.length() >= 20) {
             throw new WrongLoginException("должен быть равен или меньше 20 символов");
