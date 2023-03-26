@@ -37,7 +37,7 @@ public class Main {
         }
 
 
-        Checkerable checkerable = new checkControl();
+        Checkerable checkerable = new CheckControl();
         if (!checkerable.check(login)) {
             throw new WrongLoginException("символы логина некорректны ");
         }
